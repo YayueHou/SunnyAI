@@ -18,7 +18,8 @@
     "pages/my/collect/collect",
     "pages/my/setting/setting",
     "pages/my/mychange/mychange",
-    "pages/my/feedback/feedback"
+    "pages/my/feedback/feedback",
+    "pages/home/Clock/Clock"
   ],
   "window": {
     "backgroundTextStyle": "light",

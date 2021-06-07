@@ -1,0 +1,9 @@
+<!--pages/home/Clock/Clock.wxml-->
+<view>
+  <block wx:for="{{clock_data}}">
+   <!-- <navigator url="/pages/home/Clock/Clock" data-clockres="{{item.motion}}" bindtap="doClock">-->
+     <view>{{item.motion}}</view>
+  
+  </block>
+</view>
+<view>{{clock_data}}</view>
