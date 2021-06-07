@@ -1,0 +1,9 @@
+<!--pages/Motiontest/Testend/Testend.wxml-->
+<view class="end-box">
+  <view class="end-state">{{endstate}}</view>
+  <view class="end-state">{{score}}</view>
+  <view class="end-state">{{testresult}}</view>
+</view>
+<navigator url="pages/Motiontest/Testend" bindtap='getRecommend' class='end-button'>
+            <view>查看方案</view>  
+</navigator> 

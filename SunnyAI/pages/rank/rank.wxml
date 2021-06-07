@@ -1,0 +1,61 @@
+<!--pages/rank/rank.wxml-->
+<scroll-view class="container" scrollY="true">
+  <view>
+    <view class="top-3-box">
+      <view wx:for="{{top3Rank}}" wx:key="key" class="top-3-item {{base64.getRankTextColor(index+1)}}">
+        <image class="rank-desc desc{{(index+1)}}" src="/assets/second-place.png" wx:if="{{index==0}}"></image>
+        <image class="rank-desc desc{{(index+1)}}" src="/assets/champion.png" wx:if="{{index==1}}"></image>
+        <image class="rank-desc desc{{(index+1)}}" src="/assets/third-place.png" wx:if="{{index==2}}"></image>
+        <image class="user-icon" src="{{item.head}}"></image>
+        <view class="user-name text-ellipsis">{{item.nickname}}</view>
+        <view class="user-rank">{{item.currency}}</view>
+      </view>
+    </view>
+    <view class="rank-list">
+      <view class="my-rank">
+        <view class="my-rank-title">我的排名</view>
+        <image class="user-avatar" src="{{userInfo.head}}"></image>
+        <view class="user-nickname text-ellipsis">{{userInfo.nickname}}</view>
+        <view class="user-integral">累计积分{{userInfo.currency}}</view>
+        <view class="user-ranking">第{{userInfo.rank}}名</view>
+      </view>
+      <view class="rank-table">
+        <view class="rank-table-head">
+          <view class="ranking">排名</view>
+          <view class="nickname">姓名</view>
+          <view class="currency">累计积分</view>
+        </view>
+        <view class="rank-table-item" wx:for="{{rank}}" wx:key="key">
+          <view class="ranking">
+            <image wx:if="{{index==0}}" src="/assets/top-1.png"></image>
+            <image wx:elif="{{index==1}}" src="/assets/top-2.png"></image>
+            <image wx:elif="{{index==2}}" src="/assets/top-3.png"></image>
+            <span wx:else>{{index+1}}</span>
+          </view>
+          <view class="nickname">
+            <image class="user-avatar" src="{{userInfo.head}}"></image>
+            <view>{{item.nickname}}</view>
+          </view>
+          <view class="currency">{{item.currency}}</view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+</scroll-view>
+<wxs module="base64">
+  var getRankTextColor = ((function(num) {
+  if (num == 1) {
+  return (("no-1"))
+  };
+  if (num == 2) {
+  return (("no-2"))
+  };
+  if (num == 3) {
+  return (("no-3"))
+  };
+  return ((""))
+  }));
+  module.exports.getRankTextColor = getRankTextColor;
+</wxs>

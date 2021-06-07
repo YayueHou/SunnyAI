@@ -1,0 +1,16 @@
+
+<view class="info-list">  
+<view class="moreinfo-title">您可能需要的联系方式</view>
+<view  class="info-item"> 
+<block wx:for="{{Moreinfo}}" >
+    <navigator url="pages/MoreInfo/MoreInfo" bindtap='goInfo' data-urlnext='{{item.Infonextpage}}' class="container"  >
+            <image src='{{item.InfoImage}}' mode='aspectFill' class='info-image'></image>
+            <view class='info-title'>{{item.InfoTitle}}</view>  
+    </navigator> 
+</block>
+</view> 
+<view class="nomore">暂无更多哦</view>
+</view>
+ 
+              
+

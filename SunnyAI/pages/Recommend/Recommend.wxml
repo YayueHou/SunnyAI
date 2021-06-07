@@ -1,0 +1,18 @@
+<!--pages/Recommend/Recommend.wxml-->
+<!--<text>pages/Recommend/Recommend.wxml</text>-->
+
+<view class="recommend-list">  
+<view class="recommend-title">晴天AI推荐您</view>
+<view  class="recommend-item"> 
+<block wx:for="{{articles}}" >
+    <navigator url="pages/Recommend/Recommend" bindtap='goArticle' data-urlnext='{{item.nextpage}}' class="container"  >
+            <image src='{{item.articleImage}}' mode='aspectFill' class='article-image'></image>
+            <view class='article-title'>{{item.articleTitle}}</view>  
+    </navigator> 
+</block>
+</view> 
+<view class="nomore">暂无更多哦</view>
+</view>
+ 
+              
+

@@ -1,0 +1,13 @@
+<!--pages/barometer/barometer.wxml-->
+<view class="chart-container">
+  <view class="line-block">
+    <view class="title">本周心情表</view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"></canvas>
+  </view>
+  <view class="mood-block">
+    <view class="mood-desc">本周您的好心情占比为<text>30%</text></view>
+    <more-func></more-func>
+  </view>
+  <!-- 占位 -->
+  <view class="holder"></view>
+</view>

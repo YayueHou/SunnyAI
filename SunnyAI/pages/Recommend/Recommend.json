@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "方案推荐",
+  "navigationBarTextStyle": "black",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

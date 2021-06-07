@@ -1,0 +1,61 @@
+/* pages/Motiontest/Questions/Questions.wxss */
+page{
+  background-color:#BBE0ED;
+}
+.question-box{
+  margin-top:7%;
+  display:flex;
+  margin-left:10%;
+  width: 80%;
+  height: 430rpx;
+  border-radius: 45rpx;
+  background-color: rgb(255, 255, 255);
+  color:#539DB6;
+  justify-content:center;
+  flex-direction: row;
+  border: 5rpx solid #539DB6;
+  
+}
+.question-data{
+  margin-left:5%;
+  margin-right:5%;
+  align-items:center;
+  display:flex;
+  font-size: 50rpx;
+  justify-content:center;
+  flex-direction: row;
+  font-family: Arial;
+  font-weight:600;
+}
+.answer-container{
+  margin-top:4%;
+  display:flex;
+  align-content:space-around;
+  background-color:#BBE0ED;
+  height: 600rpx;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.answer-box{
+  align-content:space-around;
+ 
+  display:flex;
+  margin-left:10%;
+  width: 80%;
+  height:90rpx;
+  border-radius: 40rpx;
+  background-color: rgb(255, 255, 255);
+  color:#539DB6;
+  justify-content:space-around;
+  flex-direction: row;
+  border: 5rpx solid #539DB6;
+}
+.answer-data{
+  align-items:center;
+  display:flex;
+  font-size: 36rpx;
+  justify-content:center;
+  flex-direction: row;
+  font-family: Arial;
+  font-weight:600;
+}

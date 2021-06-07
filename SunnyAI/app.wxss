@@ -1,0 +1,211 @@
+/**app.wxss**/
+page,view,scroll-view,swiper,movable-area,cover-view,text,icon,rich-text,progress,button,checkbox-group,checkbox,form,input,label,picker,picker-view,radio-group,slider,switch,textarea,navigator,audio,image,video,live-player,live-pusher,open-data,web-view {
+  box-sizing: border-box;
+}
+
+page {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.buttonfix {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px;
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  background: inherit;
+  text-align: inherit;
+  line-height: inherit;
+  overflow: initial;
+}
+
+.buttonfix:after {
+  display: none;
+}
+
+.buttonfix:before {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+  -webkit-box-flex: 1;
+}
+
+.flex-jc {
+  justify-content: center;
+}
+
+.flex-ai {
+  align-items: center;
+}
+
+.placeholder {
+  color: #ddd;
+}
+
+.arrow {
+  display: flex;
+  color: #666;
+}
+
+.arrow::before {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: iconfont;
+  content: "\e606";
+  color: #555;
+  font-size: 32rpx;
+}
+
+.icon {
+  display: flex;
+}
+
+button {
+  position: relative;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-size: 14rpx;
+  text-align: center;
+  text-decoration: none;
+  line-height: 90rpx;
+  border-radius: 0;
+  -webkit-tap-highlight-color: transparent;
+  overflow: inherit;
+  color: #323232;
+  background-color: transparent;
+  border: none;
+}
+
+button::after {
+  display: none;
+  transform: scale(1);
+  border: 0;
+}
+
+.showEmpower {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.showEmpower .inner {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.showEmpower .inner {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.showEmpower .center {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+.showEmpower .center .showBoxContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showEmpower .center .headPic {
+  width: 300rpx;
+  position: relative;
+  top: -100rpx;
+}
+
+.showEmpower .center .showBoxContent text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  margin-top: -20rpx;
+}
+
+.showEmpower .center .btnLine {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  transform: translateY(50rpx);
+}
+
+.showEmpower .center .btnLine button.confirm {
+  display: flex;
+  width: 80%;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 28rpx;
+  background: #186fd8;
+  border-radius: 80rpx;
+  margin-bottom: 30rpx;
+}
+
+.showEmpower .center .btnLine button {
+  display: flex;
+  width: 80%;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+  color: #186fd8;
+  font-size: 28rpx;
+  background: #eee;
+  border-radius: 80rpx;
+}
+.text-ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.holder {
+  height: 100rpx;
+}

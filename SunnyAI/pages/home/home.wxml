@@ -1,0 +1,68 @@
+<!--pages/home/home.wxml-->
+<scroll-view class="container" scrollY="true">
+  <view>
+    <!-- 打卡信息 -->
+    <view class="clock-header">
+      <view class="user-info">
+        <view class="basic-info">
+          <image class="user-avatar" src="{{userInfo.avatarUrl?userInfo.avatarUrl:defaultUserHead}}"></image>
+          <view class="user-nickname">{{userInfo.nickName}}</view>
+        </view>
+        <view class="integral-info">
+          <view class="integral-title">我的积分</view>
+          <view class="integral-value">{{userInfo.integral}}</view>
+        </view>
+      </view>
+      <!-- 未打卡 -->
+      <button wx:if="{{!isClock}}" class="to-clock-block" bindtap="onGetUserProfile">去打卡</button>
+      <!-- 已打卡 -->
+      <view wx:else class="clocked-block">
+        <view class="clocked-title">今日心情</view>
+        <view class="mood-state">
+          <view class="state-value">非常好</view>
+          <view class="update-mood">更新 ></view>
+        </view>
+      </view>
+      <view class="accumulate-integral">
+        <view class="accumulate-item">
+          <view class="accumulate-title">累计打卡(天)</view>
+          <view class="accumulate-value">{{integralInfo.accumulateDay}}</view>
+        </view>
+        <view class="accumulate-item">
+          <view class="accumulate-title">连续打卡(天)</view>
+          <view class="accumulate-value">{{integralInfo.persistentDay}}</view>
+        </view>
+      </view>
+      <view class="statement" bindtap="goStatement">免责声明 ></view>
+    </view>
+    <!-- 积分王者 -->
+    <view class="integral-rank">
+      <view class="rank-header">
+        <view class="left-section">
+          <view class="icon">
+            <image src="/assets/crown.svg"></image>
+          </view>
+          <view>积分王者</view>
+        </view>
+        <view class="right-section" bindtap="goRank">
+          <view>排行榜</view>
+          <image class="right-arrow" src="/assets/right-arrow.svg"></image>
+        </view>
+      </view>
+      <view class="rank-info">
+        <view wx:for="{{rankHeads}}" wx:key="key" class="head-item" style="left:{{40*index}}rpx">
+          <image src="{{item}}"></image>
+        </view>
+        <view class="rank-desc" style="margin-left:{{50*rankHeads.length}}rpx">888人参与|9999次打卡</view>
+      </view>
+      <view class="calendar-info">
+        <image src="/assets/calendar.svg" class="icon"></image>
+        <view class="calendar-value">2021.6.1-2021.6.30(共30天)</view>
+      </view>
+    </view>
+    <!-- 更多功能 -->
+    <more-func></more-func>
+    <!-- 占位 -->
+    <view class="holder"></view>
+  </view>
+</scroll-view>

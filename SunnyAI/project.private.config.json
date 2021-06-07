@@ -1,0 +1,36 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "排行榜",
+          "pathName": "pages/rank/rank",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "免责声明",
+          "pathName": "pages/statement/statement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "晴雨表",
+          "pathName": "pages/barometer/barometer",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

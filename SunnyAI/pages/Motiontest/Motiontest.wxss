@@ -1,0 +1,45 @@
+/* pages/Motiontest/Motiontest.wxss */
+page{
+  background-color:#BBE0ED;
+}
+.test-title{
+  display:flex;
+  
+  margin-top: 35%;
+  color: rgba(255, 255, 255);
+  font-size: 100rpx;
+  justify-content:center;
+  flex-direction: row;
+  font-family: PingFangSC-regular;
+  margin-bottom:4%;
+  font-weight:700;
+}
+.test-statement{
+  margin-top: 1.2%;
+  display:flex;
+  color: rgba(83, 157, 182);
+  font-size: 34rpx;
+  justify-content:center;
+  flex-direction:row;
+  font-family: PingFangSC-regular;
+}
+
+.start-button{
+
+  padding-top:2%;
+  display:flex;
+  margin-left:30%;
+  margin-top:40%;
+  width: 40%;
+  height: 110rpx;
+  border-radius: 50rpx;
+  background-color: rgba(83, 157, 182);
+  color: rgba(255, 255, 255);
+  font-size: 50rpx;
+  justify-content:center;
+  flex-direction: row;
+  font-family: Arial;
+  border: 5rpx solid rgba(255, 255, 255);
+  font-weight:600;
+  box-shadow: 0 10rpx 10rpx rgba(28, 92, 122,0.5);
+}

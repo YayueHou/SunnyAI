@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "晴雨表",
+  "usingComponents": {
+    "more-func": "/components/more-func"
+  }
+}

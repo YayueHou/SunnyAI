@@ -1,0 +1,112 @@
+/* pages/my/my.wxss */
+page{
+  background-color:#BBE0ED
+}
+.box{
+  margin-top:5%;
+  
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.funinfo-box{
+  display: flex;
+  width:88%;
+  height:180rpx;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  justify-content:left;
+  background-color:rgb(255, 255, 255);
+  margin-top:8%;
+  margin-left:6%;
+  margin-bottom: 1.5%;
+  align-items:center;
+  border-radius:40rpx;
+  box-shadow: 0 20rpx 20rpx rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+.userhead-box{
+  margin-left:8%;
+  background-color: #FFF;
+  width: 125rpx;
+  height: 125rpx;
+  margin-right:8%;
+}
+.userhead{
+  border: 1px solid rgba(187, 187, 187, 100);
+  width: 125rpx;
+  height: 125rpx;
+  border-radius: 50%;
+}
+.userinfo-box{
+  background-color: #FFF;
+  width: 370rpx;
+  height: 125rpx;
+  margin-right:8%;
+}
+.user-info{
+  font-size: 44rpx;
+  text-align: left;
+  font-family: Arial;
+  font-weight:400;
+  color:rgb(29, 107, 133);
+}
+.user-signal{
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+  color:rgba(83, 157, 182);
+}
+.other-box{
+  display: flex;
+  margin-top:8%;
+  flex-direction:column ;
+  align-items:center;
+  justify-content:left;
+}
+.list-box{
+  align-items:center;
+  display: flex;
+  width: 88%;
+  height:112rpx;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  background-color:rgb(255, 255, 255);
+  margin-top:3%;
+  margin-bottom: 1.5%;
+  border-radius: 40rpx;
+  box-shadow: 0 20rpx 20rpx rgba(0, 0, 0, .2);
+  overflow: hidden;
+  justify-content:left;
+}/*
+.list-left-box{
+  width:50%;
+  align-items:center;
+  display: flex;
+  flex-direction: row ;
+  justify-content:left;
+}*/
+.list-image{
+  margin-left:4%;
+  display: flex;
+  flex-wrap: wrap;
+  height:70rpx;
+  width:70rpx;
+  flex-direction: row ;
+}
+.next-image{
+  margin-left:41%;
+  display: flex;
+  flex-wrap: wrap;
+  height:60rpx;
+  width:60rpx;
+}
+.list-name{
+  margin-left:6%;
+  font-size: 44rpx;
+  text-align: left;
+  font-family: Arial;
+  font-weight:400;
+  white-space:pre-wrap;
+}
+

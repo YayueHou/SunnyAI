@@ -1,0 +1,15 @@
+<!--pages/Motiontest/Questions/Questions.wxml-->
+<!--<view bindtap="onLoad">dianji</view>-->
+<!--<block wx:for='{{questions}}'>-->
+
+<view class="question-box">
+  <view class="question-data">{{questions.question_data}}</view>
+</view>
+<view class="answer-container">
+  <block wx:for="{{questions.answers}}" wx:if="{{item.message!=''}}" >
+    <navigator class="answer-box" url="pages/Motiontest/Motiontest" bindtap='getQuestions'
+      data-anmessage='{{item.message}}' data-anscore='{{item.score}}'>
+      <view class="answer-data">{{item.message}}</view>
+    </navigator>
+  </block>
+</view>

@@ -1,0 +1,69 @@
+/* components/more-func.wxss */ 
+
+.more-func {
+  margin: 24rpx auto;
+  width: 690rpx;
+  height: 560rpx;
+  border-radius: 8px;
+  background-color: rgba(187, 224, 237, 100);
+  box-shadow: 0px 2px 6px 0px rgba(244, 234, 234, 40);
+  font-family: Arial;
+  border: 1px solid rgba(255, 255, 255, 100);
+  padding: 40rpx 20rpx;
+}
+
+.more-title {
+  color: rgba(83, 157, 182, 100);
+  font-size: 28rpx;
+  font-family: PingFangSC-bold;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid rgba(83, 157, 182, 100);
+}
+
+.func-block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30rpx 0;
+  position: relative;
+}
+
+.func-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: #FFF;
+  padding: 40rpx 0;
+  left: 241px;
+ 
+  /*box-shadow:2px 2px 0px 0px rgb(93, 162, 194);*/
+}
+.fun-word{
+   font-family: PingFangSC-bold;
+   text-shadow:2px 2px 5px 5px rgb(93, 162, 194);
+}
+.func-item image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-bottom: 20rpx;
+ /* box-shadow:0px 2px 5px 5px rgb(93, 162, 194);*/
+}
+
+.h-line {
+  position: absolute;
+  width: 1rpx;
+  height: 200rpx;
+  top: 130rpx;
+  left: 320rpx;
+  background: rgba(83, 157, 182, 100);
+}
+
+.v-line {
+  position: absolute;
+  width: 400rpx;
+  height: 1rpx;
+  top: 220rpx;
+  left: 120rpx;
+  background: rgba(83, 157, 182, 100);
+}

@@ -1,0 +1,24 @@
+<!--components/more-func.wxml-->
+<view class="more-func">
+  <view class="more-title">更多功能</view>
+  <view class="func-block">
+    <view class="func-item">
+      <image src="/assets/music-recommend.svg" bindtap="goMusic"></image>
+      <view bindtap="goMusic">音乐推荐</view>
+    </view>
+    <view class="func-item">
+      <image src="/assets/mood-test.svg" bindtap="goMotiontest"></image>
+      <view bindtap="goMotiontest">情绪测试</view>
+    </view>
+    <view class="func-item">
+      <image src="/assets/crown.svg" bindtap="goRecommend"></image>
+      <view bindtap="goRecommend">解压方案</view>
+    </view>
+    <view class="func-item">
+      <image src="/assets/more-info.svg" bindtap="goMoreinfo"></image>
+      <view bindtap="goMoreinfo">更多信息</view>
+    </view>
+    <view class="h-line"></view>
+    <view class="v-line"></view>
+  </view>
+</view>

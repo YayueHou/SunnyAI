@@ -1,0 +1,11 @@
+<!--pages/Motiontest/Motiontest.wxml-->
+
+<view  class="test-title">情绪测试问卷</view>
+
+<view class="test-statement">本问卷由专业心理医生提供</view>
+<view class="test-statement">请根据真实情况作答</view>
+<navigator url="pages/Motiontest/Motiontest" bindtap='goQuestion' class='start-button'>
+            <view>开始答题</view>  
+</navigator> 
+
+
